@@ -151,13 +151,3 @@ SOC-home-lab/
 │   │
 │   └── 03-soar-cti-automation/
 │       └── README.md
-│
-├── investigations/
-│   └── README.md
-│
-├── detections/
-│   └── README.md
-│
-├── diagrams/
-├── screenshots/
-└── .gitignore
