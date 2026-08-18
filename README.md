@@ -12,7 +12,7 @@ The purpose of this repository is to understand how security alerts move from de
 
 ## Project Overview
 
-| Project | Main Focus | Technologies |
+|Project |Main Focus |Technologies |
 | --- | --- | --- |
 | **Project 1: Wazuh SOC Foundation** | Wazuh deployment, SOC and SIEM concepts, event analysis, logs, decoders, rules, alerts, and IOCs | Wazuh, SIEM, decoders, detection rules |
 | **Project 2: Endpoint Log Ingestion and Analysis** | Windows and Linux agent installation, log ingestion, endpoint monitoring, and event analysis | Wazuh agents, Windows Event Logs, Linux logs |
