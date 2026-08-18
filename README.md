@@ -13,8 +13,7 @@ log analysis, alert triage, incident response and cyber threat intelligence.
 ## Safety Notice
 
 All testing is performed only on systems I own or intentionally authorized
-training environments. No confidential internship or courses data, credentials, or
-private information is stored in this repository.
+training environments. No confidential internship data, course materials, credentials or private information are stored in this repository. 
 
 ## Status
 
