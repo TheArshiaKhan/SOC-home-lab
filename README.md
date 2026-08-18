@@ -1,59 +1,69 @@
 # SOC Home Lab
 
-> A hands-on cybersecurity lab for learning Security Operations, Wazuh, SIEM monitoring, alert triage, log analysis, incident response, and cyber threat intelligence.
+> A practical cybersecurity home lab focused on Security Operations, Wazuh, SIEM monitoring, alert triage, log analysis, incident response, and cyber threat intelligence.
 
-## About This Project
+## About the Project
 
-This repository documents my learning journey while building and improving a personal SOC home lab.
+This repository documents a controlled Security Operations Center (SOC) learning environment.
 
-The lab is designed to help me understand how security events are collected, monitored, investigated, and documented in a controlled environment.
+The purpose of this lab is to understand how security events are collected, processed, monitored, investigated, enriched with threat intelligence, and used to support defensive security decisions.
 
-## Current Focus
+The project focuses on practical learning through authorized laboratory systems, simulated security events, endpoint telemetry, log analysis, and structured investigation documentation.
 
-- Wazuh deployment and configuration
-- SOC and SIEM fundamentals
-- Security alert triage
-- Linux and Windows log analysis
-- Incident investigation and response
-- Cyber threat intelligence enrichment
+## Core Areas
+
+- Security Operations Center (SOC) fundamentals
+- Security Information and Event Management (SIEM)
+- Wazuh deployment and monitoring
+- Security event and log analysis
+- Alert triage and investigation
+- Wazuh decoders and rule analysis
+- Indicators of Compromise (IOCs)
+- Linux and Windows endpoint monitoring
+- Incident response concepts
+- Cyber threat intelligence (CTI)
+- VirusTotal and AbuseIPDB enrichment
 - MITRE ATT&CK technique mapping
+- Security automation and detection improvement
 
-## Planned Lab Components
+## Lab Architecture
 
-| Component | Purpose |
+| Component | Role |
 | --- | --- |
-| **Wazuh** | Security monitoring and alert management |
-| **Linux agent** | Linux endpoint monitoring and log collection |
-| **Windows agent** | Windows event monitoring and analysis |
-| **VirusTotal** | Public indicator enrichment |
-| **AbuseIPDB** | IP reputation and threat-intelligence enrichment |
-| **MITRE ATT&CK** | Understanding adversary tactics and techniques |
+| **Wazuh Manager** | Collects, processes, and manages security events from authorized endpoints |
+| **Wazuh Dashboard** | Provides a central interface for monitoring alerts, events, and security data |
+| **Linux Agent** | Collects Linux system, authentication, and security logs |
+| **Windows Agent** | Collects Windows event logs and endpoint security telemetry |
+| **Analyst Workstation** | Used for investigation, analysis, documentation, and lab administration |
+| **VirusTotal** | Provides public intelligence enrichment for selected indicators |
+| **AbuseIPDB** | Provides reputation information for selected IP addresses |
+| **MITRE ATT&CK** | Helps organize and understand adversary behavior and techniques |
 
-## Learning Roadmap
+## SOC Workflow
 
-- [ ] Deploy Wazuh manager and dashboard
-- [ ] Connect a Linux endpoint
-- [ ] Connect a Windows endpoint
-- [ ] Learn basic alert triage
-- [ ] Analyze authentication and system logs
-- [ ] Document the first investigation
-- [ ] Add VirusTotal and AbuseIPDB enrichment
-- [ ] Create detection notes and queries
-- [ ] Map relevant activity to MITRE ATT&CK
-- [ ] Document lessons learned
+1. **Deployment** – Deploy the monitoring platform and connect authorized lab endpoints.
+2. **Monitoring** – Collect and review security events, alerts, and endpoint logs.
+3. **Initial Investigation** – Validate alerts and identify the relevant systems, users, timestamps, and evidence.
+4. **CTI Enrichment** – Enrich selected indicators using approved public intelligence sources.
+5. **Analysis** – Correlate evidence, build a timeline, and determine the likely meaning of the activity.
+6. **Escalation** – Escalate serious, suspicious, or confirmed events for deeper investigation.
+7. **Incident Response** – Document appropriate containment, remediation, recovery, and follow-up actions.
+8. **Automation** – Improve repetitive enrichment, detection, reporting, and analysis workflows.
 
-## Investigation Method
+## Investigation Approach
 
-For each investigation, I will document:
+Each investigation in this lab follows a structured process:
 
-1. The alert or security question
-2. The affected lab system
-3. Relevant logs and evidence
-4. Analysis and timeline
-5. Investigation conclusion
-6. Recommended response
-7. Detection improvements
-8. Lessons learned
+- Define the security question or alert.
+- Identify the affected authorized lab system.
+- Collect relevant logs and evidence.
+- Analyze timestamps, users, processes, network information, and event context.
+- Build an investigation timeline.
+- Determine whether the activity is benign, suspicious, or malicious within the lab scenario.
+- Document recommended response actions.
+- Identify detection improvements and lessons learned.
+
+Observed evidence, assumptions, and conclusions are documented separately to support clear and repeatable analysis.
 
 ## Repository Structure
 
@@ -61,8 +71,21 @@ For each investigation, I will document:
 SOC-home-lab/
 ├── README.md
 ├── docs/
+│   ├── architecture.md
+│   ├── deployment.md
+│   ├── log-analysis.md
+│   └── soc-workflow.md
 ├── investigations/
+│   ├── README.md
+│   └── case-studies/
 ├── detections/
+│   ├── README.md
+│   └── detection-notes.md
 ├── cti/
+│   ├── README.md
+│   ├── indicator-enrichment.md
+│   └── reports/
 ├── scripts/
+│   ├── README.md
+│   └── log-analysis/
 └── screenshots/
